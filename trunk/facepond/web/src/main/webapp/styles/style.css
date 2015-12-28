@@ -1,0 +1,3646 @@
+/**** temporary band-aid styles to be removed on fixing uiElement ******/
+.contentHeader>div, .contentHeader.util>h1 {
+	display: inline-block;
+}
+.dropdown_icon {
+	line-height: 15px;
+}
+#appversionRightNavbar_title {
+	color: #fff;
+}
+
+button, .confirmpop .ui-dialog-buttonset,
+button, .errorDialog .ui-dialog-buttonset{
+	padding:4px 0
+}
+
+button, .confirmpop .ui-dialog-buttonset > button,
+button, .errorDialog .ui-dialog-buttonset > button {
+    border-width: 2px;
+    color: #000000;
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-right: 5px;
+    overflow: visible;
+    padding: 0 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+/***** general *****/
+body {
+	background: #fff url(images/body-bg.png) repeat-x;
+	font: 12px/16px Helvetica, Arial, sans-serif;
+}
+h1 {
+	color: #002663;	
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 40px;
+}
+h3, h4 {
+	color: #006890;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+}
+h4 {
+	color: #002663;
+	font-weight: normal;
+	padding-bottom: 7px;
+}
+p , ol, ul {
+	padding-bottom: 16px;
+}
+ol ol, ol ul, ul ul, ul ol {
+	padding-bottom: 0;
+}
+a:link, a:visited, a:active {
+	color: #006890;
+	text-decoration: none;
+}
+a:hover {
+	color: #006890;
+	text-decoration: underline;
+}
+ol {
+	list-style: decimal;
+}
+ul {
+	list-style: disc;
+}
+ol>li{
+	margin-left: 20px;
+}
+input[type='text'], input[type='password'] , textarea {
+
+	border: 1px solid #000;
+	font: 12px/24px arial, helvetica, sans-serif;
+	height: 24px;
+	margin: 10;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+textarea {
+	height: 73px;
+	line-height: 16px;
+	margin: 0;
+	padding: 5px;
+}
+
+input.required, textarea.required {
+	color: #000; /* overriding global-all.css */
+}
+
+h5.talkboxImage{
+	width:50px;
+	height:50px;
+	padding-top:64px;
+}
+/******************* grid ************/
+#Main, #container_Header, #container_Footer {
+	width: 900px;
+	margin: 0 auto;
+}
+#Footer {
+	padding-left: 0;
+}
+#container_Left {
+	padding-right: 5px;
+	padding-top: 0;
+	min-height: 4px;
+	width: 140px;
+}
+#container_Content, .Content-Widest, .Content-Wide{
+	width: 755px;
+}
+.Left {
+	width: auto;
+	margin-right: 0;
+}
+.Right {
+	width: 140px;
+	min-height:	250px;
+}
+/*********** header ***************/
+.Header {
+	overflow: visible;
+}
+#top {
+	height: 20px;
+}
+.img_logo {
+	background-image: url(images/bb_devex_blu_rgb_150_resize.png);
+	display: block;
+	height: 59px;
+	line-height: 59px;
+	width: 250px;
+}
+.logo_container, .header_bottom>ul, .header_bottom>ul>li, .header_bottom {
+	background: url(images/verticle_blk_square.gif) right top repeat-y;
+}
+.header_bottom>ul.topnav>li:first-child {
+	background: none;
+}
+.logo_container {
+	float: left;
+	margin: 0;
+	padding: 0 1px 3px 1px;
+	vertical-align: bottom;
+}
+.header_bottom>ul {
+	float: left;
+	margin: 5px 0 0;
+	padding: 0;
+}
+.header_bottom>ul.dashboard {
+	float: right;
+}
+.header_bottom {
+	height: 66px;	
+}
+.header_bottom>ul>li {
+	background-position: left top;
+	float: left;
+	list-style: none;
+}
+.header_bottom>ul>li>a {
+	color: #000;
+	display: block;
+	padding: 0 10px 6px;
+	font-weight: bold;
+}
+.header_bottom>ul>li.top_menu_link_parent_active>a{
+	border-bottom: 3px solid #006e8e;
+}
+#user_menu {
+	float: right;
+	position: relative;
+}
+#user_menu>ul {
+	-moz-box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #000;
+	border-top: 0;
+	box-sizing: border-box;
+	display: none;
+	left: 0;
+	list-style: none;
+	padding: 0 10px;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+}
+#user_menu>ul>li>a {
+	border-top: 1px solid #ccc;
+	color: #000;
+	font-size: 10px;
+	display: block;
+	padding: 5px 0;
+	text-decoration: none;
+}
+#user_menu>ul>li>a:hover {
+	color: #3F91AC;
+}
+#user_menu>ul>li:first-child>a {
+	border: 0;
+}
+#user_menu:hover>ul {
+	display: block;
+}
+#user_menu:hover #user_link {
+	background: url(images/1x1blk.png) left bottom repeat-x;
+}
+#user_link {
+	font-size: 10px;
+	float: right;
+	padding-right: 10px;
+}
+#user_menu #user_link {
+	float: none;
+	font-weight: bold;
+}
+#user_link>a {
+	color: #fff;
+}
+#user_menu #user_link>a {
+	background: url(images/arrow_down.gif) no-repeat 92% 7px;
+	border: 1px solid #002663;
+	border-bottom: 0;
+	display: block;
+	height: 19px;
+	line-height: 19px;
+	vertical-align: middle;
+	padding: 0 22px 0 8px;
+}
+#user_menu:hover #user_link>a {
+	background-color: #fff;
+	background-image:url(images/arrow_down_000.png);
+	border-color: #000;
+	color: #000;
+	text-decoration: none;
+}
+#formSearch{
+    float: right;
+    height: 12px;
+	margin-top: 4px;
+	position: relative;
+    width: 124px;
+}
+#formSearch>p>input {
+	background: #405c8a;
+	border: none;
+	color: #fff;
+	display: block;
+	font: 9px/12px arial,helvetica,sans-serif;
+	height: 12px;
+	padding: 0 3px;
+	vertical-align: middle;
+	width: 118px;
+}
+#formSearch>p>button {
+	clip: rect(200px,200px,200px,0);
+	display: block;
+	position: absolute;
+}
+#menu_dashboard>span {
+	display: block;
+	float: left;
+}
+.menu_notifications {
+	background: #ed5929;
+	color: #fff;
+	display: block;
+	font-size: 8px;
+	height: 10px;
+	line-height: 10px;
+	margin: 3px 0 0 4px;
+	padding: 0 3px;
+	vertical-align: middle;
+}
+/************** footer ************/
+.footerHeading {
+}
+#Footer {
+	padding-top: 40px;
+	padding-left: 145px;
+}
+#Footer>ul {
+	background: url(images/footer_800x20.gif) no-repeat;
+	padding: 20px 0 0;
+}
+#Footer>ul>li>a {
+	background: url(images/verticle_blk_square.gif) right top repeat-y;
+	border: 1px solid #e5e5e5;
+	border-top-width: 3px;
+	border-left: none;
+	border-right: none;
+	color: #000;
+	display: block;
+	font-size: 11px;
+	line-height: 40px;
+}
+#Footer>ul>li{
+	float:left;
+	width:20%;
+}
+#Footer>ul>li:first-child {
+	background: url(images/verticle_blk_square.gif) left top repeat-y;
+}
+#Footer>.legal {
+	font: 10px Helvetica, Arial, sans-serif bold;
+	color: #999999;
+	margin-top: 15px;
+	text-align: center;
+}
+#Footer>ul>li>a:hover {
+	color: #006890;
+	text-decoration: underline;
+}
+#Footer>ul>li>a:before, #Footer>ul>li>.legal:before {
+	display: none;
+}
+/************** sidenav ***********/
+.ResourceMenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ResourceMenu:empty {
+	border-bottom: 0;
+}
+.resource_item {
+	margin: 0;
+	padding: 0;
+}
+.resource_item>a>div {
+	float: right;
+	margin-top: -2px;
+	width: 50px;
+}
+.ResourceMenu .resource_item>a {
+	border-bottom: 1px solid #ccc;
+	color: #000;
+	display: block;
+	font: bold 11px arial, helvetica, sans-serif;
+	line-height: 14px;
+	margin: 0;
+	padding: 8px 1px 5px;
+	vertical-align: bottom;
+}
+.ResourceMenu>li.last>a {
+	border-bottom: 1px solid #000;
+}
+.ResourceMenu .resource_item a.resource_item_active {
+	border-bottom: 3px solid #006890;
+	color: #006890;
+	font-weight: bold;
+}
+.resource_item_container {
+	padding: 8px 0 0;
+}
+/******** content standard *********/
+button {
+	background: #fff;
+	border-width: 2px;
+	border-color: #d7d7d7 #c2c2c2 #a1a1a1 #ebebeb;
+	color: #000;
+	font-size: 8px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 2px 0 0;
+	overflow: visible;
+	padding: 0 5px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+@-moz-document url-prefix() {
+	/* not thrilled about this hack, but FF adds extra padding in button text when line breaks are in the code (for no reason), and all other browsers ignore the line breaks */
+	button, 
+	.errorDialog .ui-dialog-buttonset > button {
+		padding: 0 2px;
+		line-height: 14px;
+	}
+	.errorDialog .ui-dialog-buttonset > button {
+		padding: 0 6px;
+	}
+}
+button.inset {
+	border-color: #5e5e5e #e8e7e4 #d6d6d6 #a3a4a5;
+}
+button[disabled] {
+	background: #f4f4f4;
+	border-color: #d7d7d7 #c2c2c2 #a1a1a1 #ebebeb;
+	color: #898989;
+}
+button.action_call, .ui-widget-content .ui-state-default.action_call, .ui-state-default.action_call {
+	background-color: #f2af00;
+	border-color: #fae9ac #b67d3e #805c43 #ffd173;
+}
+.utilBtn{
+	margin-left:10px;
+	padding: 0 1px;
+}
+td>.utilBtn {
+	margin: 0;
+}
+.contentHeader {
+	background: #d6dadc;
+	border-bottom: 5px solid #000;
+	padding: 10px 20px 7px;
+}
+@-moz-document url-prefix() {
+	.contentHeader {
+		padding: 12px 20px 6px;
+	}
+}
+.sectionHeader.clearthis>h4, .sectionHeader.clearthis>p {
+	float: left;
+}
+.contentBody .clearthis:after, .contentHeader.clearthis:after {
+	clear: left;
+}
+.contentBody {
+	background: url(images/contentBody-bg.png) repeat-y;
+	border-bottom: 1px solid #000;
+	padding: 0 21px;
+}
+.Content-Wide .contentBody, .Content-Widest .contentBody {
+	background-image: url(images/contentBody-wide-bg.png);
+}
+.contentBody .section {
+	padding: 14px 0 0;
+}
+.buttons {
+	text-align : right;
+	padding-bottom:0px;
+}
+.buttons>li {
+	display: inline;
+}
+.clearthis>p {
+	float: left;
+	width: 274px;
+	padding-left: 15px;
+}
+.clearthis>p:first-child {
+	padding-left: 0;
+	width: 276px;
+}
+label.error, .gridForm .clearthis>p>label.error, .gridForm .clearthis>p:first-child>label.error, .gridForm label.error {
+	color: #f00;
+	float: left;
+	width: auto;
+	font-style: italic;
+	display : block;
+}
+input.helperText, textarea.helperText {
+	color: #999;
+}
+input.error, textarea.error {
+	color: #e07d7d;
+}
+label.errorFloat {
+	font-weight: normal;
+	position: absolute;
+    vertical-align: middle;
+}
+
+.versionText>span.selectbox {
+	display: inline-block;
+	position: relative;
+	margin-left:6px;
+	margin-top:-4px;
+}
+.MyAppVersionDetails .versionText{
+	vertical-align : middle;
+}
+.versionText{
+	font-weight : bold;
+	line-height: 40px;
+	padding : 3px 0 0 5px;
+}
+.util>.versionText{
+	padding-left : 6px;
+}
+span.selectbox, .boardFilter>ul>li:first-child .selectbox {
+	background: #002663 url(images/dub_arrows.png) no-repeat right center;
+	color: #fff;
+	display: block;
+    height: 15px;
+    line-height: 16px;
+	overflow: hidden;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.boardFilter .selectbox {
+	background-color:  #fff;
+	background-image: url(images/dub_arrows_000.png);
+	color: #000;
+}
+
+span.selectbox.inliner {
+	display: inline !important; /* this is for styledSelect truncating */
+}
+span.selectbox.forIE  {
+	height: 16px;
+	line-height: 16px;
+	padding-top: 0;
+}
+.selectbox-wrapper li, span.selectbox {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 9px;
+	padding: 1px 13px 0 5px;
+	text-transform: uppercase;
+}
+.contentHeader .selectbox-wrapper>li {
+	padding: 0;
+}
+.contentHeader .selectbox-wrapper>li>a,
+.selectbox-wrapper,
+.boardFilter>ul>li:first-child .selectbox-wrapper {
+	background: #002663;
+	color: #fff;
+}
+.selectbox-wrapper {
+	border-top: none;
+	border-left: none;
+}
+.boardFilter .selectbox-wrapper {
+	background: #fff;
+	color: #000;
+}
+.contentHeader .selectbox-wrapper>li>a {
+	display: block;
+	padding: 1px 13px 0 5px;
+	text-decoration: none;
+}
+.contentHeader .selectbox-wrapper>li>a:hover,
+.contentHeader .selectbox-wrapper>li>a.current,
+.selectbox-wrapper li.selected,
+.selectbox-wrapper li.current,
+.boardFilter>ul>li:first-child .selectbox-wrapper li.selected,
+.boardFilter>ul>li:first-child .selectbox-wrapper li.current {
+	background: #266d8d;
+	color: #fff;
+}
+.boardFilter .selectbox-wrapper li.selected, .boardFilter .selectbox-wrapper li.current {
+	background: #f3f3f3;
+	color: #000;
+}
+/********* gridForm *******/
+.gridForm label, .gridForm input[type='text'], .gridForm input[type='password'], .gridForm textarea { /*** special exception for descendent selectors *****/
+	display: block;
+	width: 552px;
+}
+.gridForm .clearthis>p>label {
+	width: 275px;
+}
+.gridForm .clearthis>p>input[type='text'], .gridForm .clearthis>p>input[type='password'], .gridForm .clearthis>p>textarea {
+	width: 259px;
+}
+.gridForm .clearthis>p:first-child>label {
+	width: 276px;
+}
+.gridForm .clearthis>p:first-child>input[type='text'], .gridForm .clearthis>p:first-child>input[type='password'], .gridForm .clearthis>p:first-child>textarea {
+	width: 259px;
+}
+.gridForm label {
+	padding-bottom: 5px;
+}
+
+/******** content popup *******/
+.ui-dialog  .contentBody {
+	background: none;
+}
+.ui-dialog .contentHeader, .ui-dialog  .contentBody {
+	padding: 24px 21px;
+}
+.ui-dialog  .contentBody {
+	padding-bottom: 0;
+}
+.ui-dialog .contentHeader>h2 {
+	font-size: 18px;
+	color: #002663;
+}
+.ui-dialog  .contentBody>p>label {
+	font-size: 10px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+/******** csHelp *******/
+.csHelpContainer {
+	background: #f3f3f3;
+	border-bottom: 1px solid #000;
+	color: #464646;
+	padding: 0 22px;
+	position: relative;
+}
+.csHelpContainer>p, .csHelpContainer>li {
+	line-height: 15px;
+}
+.csHelpContainer>p:first-child {
+    padding: 0;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+}
+.csHelpContainer>p>button.closeBtn {
+	background: #ebeeee url(images/decline_icon.gif) no-repeat;
+	border: none;
+	height: 6px;
+	line-height: 6px;
+	margin: 0;
+	width: 7px;
+}
+.csHelpContainer>h2 {
+    border-bottom: 1px dotted #000;
+    color: #002663;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    padding: 21px 0 20px;
+}
+
+/********** talkbox **************/
+.newTalkboxEntry input[type="text"].helperText {
+	font-style: italic;
+	display: block;
+	line-height: 31px;
+    height: 31px;
+    width: 558px;
+}
+
+.newTalkboxEntry textarea.helperText{
+	font-style:italic;
+}
+.forumTalkboxPanel>#talkboxHeaderTitle{
+	padding-bottom:0;
+}
+.forumTalkboxPanel .newTalkboxEntry{
+	padding-top:4px;
+	padding-bottom:23px;
+}
+.forumTalkboxPanel #PostStartDiscussionInput, .forumTalkboxPanel #DiscussionText{
+	width : 702px;
+}
+.forumTalkboxPanel #DiscussionTitle{
+	width : 332px;
+}
+.forumTalkboxPanel #DiscussionTags{
+	width : 332px;
+}
+.apiSelectControl {
+	width: 100px;
+}
+.apiVersionSelectControl {
+	width: 75px;
+}
+.forumTalkboxPanel .clearthis.inputs p{
+	width: 355px;
+}
+.newTalkboxEntry {
+	padding: 12px 0 16px 19px;
+}
+.newTalkboxEntry>p:first-child {
+	padding-bottom: 12px;
+}
+.newTalkboxEntry textarea {
+    height: 83px;
+    width: 558px;
+}
+.newTalkboxEntry .clearthis>p {
+	padding-bottom: 2px;
+	width: 276px;
+}
+.newTalkboxEntry .clearthis.inputs {
+	height: 39px;
+}
+.newTalkboxEntry .clearthis>p>input[type="text"], .newTalkboxEntry .clearthis>p:first-child>input[type="text"] {
+	height: 31px;
+	width: 268px;
+}
+.newTalkboxEntry .filters>p{
+	float: left;
+}
+.newTalkboxEntry .filters{
+	height:34px !important;
+}
+.newTalkboxEntry .filters>p.buttons {
+	float:right;
+	padding: 13px 22px 14px 0;
+}
+.newTalkboxEntry .filters>p,.newTalkboxEntry .filters>p>label,.newTalkboxEntry .filters>p>select,
+.newTalkboxEntry .filters>p:first-child,.newTalkboxEntry .filters>p:first-child>label,.newTalkboxEntry .filters>p:first-child>select{
+	width: auto;
+}
+.newTalkboxEntry .filters>p>div {
+	display: inline-block;
+}
+.newTalkboxEntry .filters>p>label {
+	font-size: 11px;
+	font-weight:  bold;
+	padding-bottom: 3px;
+}
+.newTalkboxEntry .filters>p>label.error, .newTalkboxEntry .filters>p:first-child>label.error {
+	display: block;
+	float: none;
+}
+.newTalkboxEntry .buttons>button {
+	margin-top: 1px;
+}
+/********** support content ******/
+.editable .contentBody {
+	padding: 0;
+}
+.editable .section {
+	border-top: 1px dotted #000;
+}
+.editable .section>p, .editable .section>ul, .editable .section>ol, .editable .section>h5, .editable .section>h6, .editable .sectionHeader>h3, .editable .sectionHeader>h4, .editable [role='listitem']>p {
+	padding: 0 21px 0 16px;
+}
+.editable .extendedOrderedList {
+	counter-reset:section;
+	margin-left: 20px;
+}
+.editable [role='listitem']:before {
+	counter-increment: section;
+	content: counter(section) ". ";
+	float: left;
+}
+.editable .section>h6 {
+	font-weight: bold;
+}
+.editable .section>h5 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+.editable .section:first-child, .editable .tableOfContents+.section {
+	border: none;
+	padding-left: 6px;
+}
+.editable .tableOfContents {
+	border-bottom: 3px solid #000;
+}
+.editable .sectionHeader>h4 {
+	padding-bottom: 15px;
+}
+.definitionTable {
+	border: 1px solid #000;
+	border-bottom: none;
+	border-left: none;
+	margin: 0 16px 20px;
+}
+.definitionTable th, .definitionTable td {
+	border: 1px solid #000;
+	border-top: none;
+	border-right: none;
+	padding: 5px;
+}
+.definitionTable th {
+	background: #f3f3f3;
+	font-weight: bold;
+}
+.definitionTable caption {
+	font-weight: bold;
+	line-height: 20px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.supportList {
+	padding-right : 21px;
+}
+.editable .note {
+	font-style: italic;
+}
+.editable .section ul>li, .editable [role='listitem'] ul>li {
+	margin-left: 20px;
+}
+/**************Login*************/
+
+.loginForm {
+	background : #ecedef;
+	padding : 14px 20px 7px 20px;
+	border-bottom : 5px solid #000;
+}
+.loginForm .menu_parent{
+	margin-top : 4px;
+}
+
+.loginForm>h1{
+	border: none;
+	padding-bottom: 2px;
+}
+.loginForm .signupErrorMessage{
+	text-align: left;
+	color:#d00;
+}
+.loginForm .loginPasswordError{
+	display : none;
+}
+.Signup > .clearthis > div.forms>.loginForm input {
+	width : 268px;
+	height : 24px;
+	padding-left : 5px;
+}
+#signUpborder{
+	background : url("images/contentBody-bg.png") repeat-y scroll 0 0 transparent;
+}
+.loginForm .clearthis>p {
+	width : 274px;
+	padding: 0 0 3px 18px;
+}
+.loginForm .clearthis>p:first-child {
+	padding-left: 0;
+}
+.loginForm .clearthis .buttons {
+	float : right;
+	padding-right: 5px;
+	width : 278px;
+}
+.loginForm .clearthis .buttons>button{
+	margin-right : 0px;
+}
+.loginForm .clearthis .buttons>a {
+	float : left;
+	font-size : 10px;
+	padding :1px 0 0 7px; 
+}
+
+/************ Api Group *****************/
+
+.apiGroupAccess .groupdiv{
+	padding-top : 15px;
+}
+
+.groupdiv .editGroupInfo{
+	font-size : 9px;
+}
+
+.groupdiv_title>button{
+	margin : 0px;
+	margin-left : 5px;
+	margin-bottom: 2px;
+}
+
+.gentbl {
+	width: 100%;
+}
+.gentbl>tbody>tr>td {
+	text-align: left;
+	padding: 0 5px;
+	border-top: 1px solid #999;
+	vertical-align: middle;
+}
+.gentbl>tbody>tr:first-child>td {
+	border: none;
+}
+.ga_leader {
+	padding-left : 20px;
+	width : 100px;
+}
+.groupdiv .groupdiv_title span{
+	font-size: 18px;
+	line-height: 24px;
+	color: #002663;
+	font-weight: normal;
+	padding-bottom: 7px;
+}
+
+.apiGroupAccess>div.contentBody{
+	border-bottom: 5px solid black;
+}
+.apiGroupAccess>div.contentBody:last-child{
+	border-bottom: 1px solid black;
+}
+
+.groupdiv .gentbl{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.createGroupButtonTD{
+	vertical-align : middle;
+}
+.createGroupButton{
+	background-color: #F2AF00;
+    border-color: #FAE9AC #B67D3E #805C43 #FFD173;
+}
+
+.groupdiv .ga_avatar {
+	width: 32px;
+	padding-left: 2px;
+	padding-top: 7px;
+	padding-bottom: 8px;
+}
+.ga_name{
+	width: 107px;
+}
+.ga_avatar img {
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+.ga_email {
+	color: #777;
+}
+.ga_remove {
+	width: 55px;
+	text-align: right;
+	padding-right: 0;
+}
+.ga_status {
+	height: 19px;
+	line-height: 19px;
+	zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+	padding: 0 0 0 10px;
+	font-size: 10px;
+}
+/* .ga_status .ga_declined { */
+/* 	background: url(images/label-Declined.png) left center no-repeat; */
+/* } */
+
+.ga_status .ga_declined {
+	font-size : 8px;
+	background: url(images/Xs_icon.gif) left center no-repeat;
+}
+
+.ga_status .ga_cancelled {
+	font-size : 8px;
+	background: url(images/Xs_icon.gif) left center no-repeat;
+}
+
+.ga_status .ga_pending {
+	font-size : 8px;
+	background: url(images/pending_icon.gif) left center no-repeat;
+}
+.ga_remove>button {
+	margin-right: 0;
+}
+.apiAddModifyGroup>.gridForm>.section>.clearthis>p>.apiAddModifyGroupName{
+	width : 551px;
+}
+.apiAddModifyGroup>.gridForm>.section>p>#apiAddModifyGroupDescription{
+	width : 551px;
+	padding : 5px;
+}
+.EditGroupInfo .contentBody input{
+	width : 441px;
+}
+.EditGroupInfo .contentBody>p:first-child{
+	padding-bottom:21px;
+}
+
+/************** signup ************/
+
+.Signup .contentBody .section {
+	padding : 0;
+}
+.Signup .clearthis>div{
+	float : left;
+}
+.Signup .clearthis .forms{
+	width : 611px;
+}
+.Signup>.clearthis>div.forms input {
+	height : 24px;
+	width : 268px;
+	padding : 0;
+	padding-left : 5px;
+}
+.Signup>.clearthis>div.forms .contentBody .captchaInputContainer>input{
+	height:24px;
+	width : 249px;
+	padding-left : 5px;
+}
+.Signup .recaptcha_nothad_incorrect_sol{
+	height : 80px;	
+}
+.Signup .signupErrorMessage{
+	display : none;
+}
+.Signup .info {
+	padding: 18px 0 8px 18px;
+	line-height:12px;
+	font-size : 10px;
+	color : #777;
+}
+.Signup>.clearthis>.forms .contentBody>.section div.passwords .passwordRules {
+	line-height:12px;
+	font-size : 10px;
+	width : 274px;
+	color : #777;
+	padding-left: 18px;
+	padding-top: 22px;
+}
+.Signup>.clearthis>.forms .contentBody>.section div.passwords .passwordRules label {
+	color:#000;
+	padding-bottom:0px;
+}
+.Signup>.clearthis>.forms .contentBody>.section div.passwords .passwordRules ul {
+	list-style:none;
+}
+.Signup>.clearthis>.forms .contentBody>.section div.passwords .passwordRules>h5{
+	color : #000;
+}
+
+.backSlashBlack{
+	color : #000;
+}
+.fieldRequired{
+	display:block;
+	color: #777;
+	padding-top : 15px;
+}
+
+.fieldRequired>.required{
+	padding-left: 6px;
+}
+.Signup .captchaImageContainer {
+	width : 302px;
+	float : left;
+	padding-right : 10px;
+}
+#recaptcha_image>img {
+	border : 1px solid #e1e1e1;
+}
+.Signup .sectionHeader>h6, .Signup .captchaImageContainer>h6, .Signup .legalAgreement>h6{
+	color : #777;
+}
+.Signup .legalAgreement>h6 {
+	font-size : 10px;
+	padding-bottom : 4px;
+}
+.Signup .legalAgreement>h3 {
+	color : #002663;
+}
+.Signup>.layout_border_left_right_bottom>.documentPanel>h3{
+	color : #002663;
+	font-weight : normal;
+}
+.Signup .legalAgreement .clearthis {
+	padding: 10px 0 10px 18px;
+	border : 1px solid #000;	
+	border-top : 0;	
+}
+.Signup .legalAgreement .clearthis>p:first-child{
+	width : 150px;
+	padding-right : 16px;
+}
+.Signup .contentBody .clearthis>p.developerAgree { /** had to be this specific because of the above selector ***/
+    padding: 0;
+    width: 381px;
+}
+.Signup .legalAgreement .legal{
+	font-size: 80%;
+	padding: 10px 18px;
+	height:244px;
+	overflow: auto;
+	border: 1px solid #000;
+}
+.Signup .legalAgreement .clearthis:after {
+	clear: both;
+}
+.Signup .captchaImageContainer>p{
+	padding-top : 8px;
+}
+.Signup .captchaInputContainer{
+	float : left;
+	width : 255px;
+}
+.Signup .captchaInputContainer>input {
+	width : 239px;
+	margin-top : 8px;
+	border: 1px solid #000;
+}
+.Signup .captchaActionSpan {
+	float : right;
+}
+.Signup .containerSignupEditor {
+	width : 144px;
+}
+
+.Signup .containerSignupEditor .editable>div>ul{
+	padding-bottom : 0;
+}
+
+.Signup .contentHeader {
+	background: url(images/contentBody-bg.png) repeat-y;
+	border-bottom-width: 1px;
+	padding: 11px 22px 12px;
+}
+.Signup .contentHeader>h1{
+	float : left;
+}
+.Signup .contentBody>form>fieldset {
+	padding-top : 31px;
+}
+.Signup  #legalAgreement {
+	padding: 30px 0 0;
+	text-align: left;
+}
+.Signup .contentBody .clearthis>p {
+	float : left;
+	width : 274px;
+}
+.Signup .contentBody .passwords>.passwordInputFields>p:last-child {
+	padding-bottom : 10px;
+}
+.Signup .contentBody .passwords>.passwordInputFields{
+	width : 274px;
+}
+p.confPassword>label:first-child{
+	padding-top : 9px;
+}
+
+.Signup .contentBody .names{
+	padding-bottom : 10px;
+}
+.Signup .contentBody .names>p:last-child{
+	padding-left:18px;
+}
+.Signup .contentBody .emails{
+	padding-bottom : 11px;
+}
+.Signup .contentBody .clearthis>p:first-child {
+	padding-left: 0;
+}
+.Signup .contentBody .clearthis>p>label {
+	display: block;
+	padding-bottom: 5px;
+}
+.Signup .contentBody .clearthis>.passwordInputFields>p.origPassword>label, .Signup .contentBody .clearthis>.passwordInputFields>p.confPassword>label {
+	display: block;
+	padding-bottom: 9px;
+}
+.Signup .contentBody {
+	border-bottom : 1px solid #000;
+}
+.Signup .contentBody .clearthis .buttons {
+	float : right;
+}
+.Signup .containerSignupEditor {
+	background: url(images/verticle_blk_square.gif) right top repeat-y;
+	border-bottom : 1px solid #000;
+}
+.Signup .containerSignupEditor>li {
+	padding-left : 10px;
+}
+.Signup .signupSubmitButtonDiv {
+	padding : 15px 0;
+}
+.Signup .signupSubmitButton>button {
+	margin-right: 0;
+}
+.Signup .containerSignupEditor {
+	padding : 0;
+}
+.Signup .containerSignupEditor>.SignupEditor{
+	padding-bottom : 4px;
+}
+.Signup .contentHeader>h6 {
+	float : left;
+	padding-top: 24px;
+}
+.Signup .contentHeader>div {
+	border-bottom : 1px solid #000;
+	padding-bottom : 0;
+	height : 62px;
+}
+.star, .key, .graph, .smile, .disruption, .outage {
+	background: no-repeat;
+	list-style: none;
+}
+.star {
+	background-image: url(images/star_icon.gif);
+}
+.key {
+	background-image: url(images/key_access_icon.gif);
+	background-position: 0 4px;
+}
+.graph {
+	background-image: url(images/testing_icon.gif);
+}
+.smile {
+	background-image: url(images/smile.gif);
+}
+.disruption {
+	background-image: url(images/disruption.gif);
+}
+.outage {
+	background-image: url(images/outage.gif);
+}
+.SignupEditor {
+	padding: 13px 14px 14px;
+}
+#fauxEditor_SignupEditor>div>h3{
+    border-bottom: 1px dotted #000;
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 10px;
+}
+#fauxEditor_SignupEditor>div>ul {
+	padding-top: 10px;
+}
+#fauxEditor_SignupEditor>div>ul>li{
+	color: #777;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 18px 0 16px;
+}
+#fauxEditor_SignupEditor>div>ul>li>strong{
+	color: #000;
+}
+
+.layout_border_left_right_bottom {
+	background-image: url(images/contentBody-wide-bg.png);
+}
+
+.layout_border_left_right_bottom  .documentPanel{
+	border-bottom : 1px solid #000;
+	padding-bottom : 0;
+}
+.Signup>.layout_border_left_right_bottom>.documentPanel p:last-child{
+	padding-bottom : 0;
+}
+
+/************ Forgot Password ***************/
+
+.ForgotPassword{
+	width : 610px;
+}
+
+.ForgotPassword>.forgotPasswordForm p.forgotPasswordInputs{
+    padding-bottom: 3px;
+    width: 274px;
+}
+.ForgotPassword>.forgotPasswordForm p.forgotPasswordInputs>input{
+	width : 263px;
+}
+.ForgotPassword>.forgotPasswordForm p.buttons button.cancelButton{
+	margin-left: 0;
+}
+.ForgotPassword div.contentBody{
+	border-bottom: 1px solid #000;
+	padding-top :10px;
+}
+.ForgotPassword>.forgotPasswordForm p.emailAddressError{
+	display : none;
+}
+.resetPasswordFormInputs p{
+	width: 274px;
+	float : left;
+}
+.resetPasswordFormInputs p:first-child{
+	padding-right: 18px;
+}
+.resetPasswordFormDiv>.resetPasswordFormInputs .confirmResetPassword p{
+	padding-left : 0;
+}
+
+.ForgotPassword .resetPasswordFormDiv p.buttons{
+	float : left;
+	padding-left : 0;
+}
+.ForgotPassword .resetPasswordFormDiv p.buttons .button{
+	margin-right : 0;
+}
+.ForgotPassword .resetPasswordFormDiv p.resetPasswordRules{
+	font-size : 10px;
+	color : #777;
+	float : left;
+	line-height:12px;
+	width : 274px;
+	padding-right : 18px;;
+}
+.ForgotPassword .resetPasswordFormDiv p.resetPasswordRules>h5{
+	color : #000;
+}
+.ForgotPassword .forgotPasswordFormDiv , .resetPasswordFormDiv{
+	padding-top: 10px;
+}
+.resetPasswordFormDiv .resetPasswordFormInputs>p> input{
+	width : 263px;
+}
+.ForgotPassword .forgotPasswordFormDiv .buttons{
+	text-align : right;
+	width : 305px;
+}
+.ForgotPassword .forgotPasswordFormDiv .resetCodeInput{
+	width : 300px;
+	padding-bottom : 3px;
+}
+.ForgotPassword .forgotPasswordFormDiv .resetCodeInput>input{
+	width : 288px;
+}
+.ForgotPassword .forgotPasswordFormDiv .buttons .cancelButton{
+	margin-left : 0;
+}
+.ForgotPassword>.forgotPasswordForm p.buttons{
+	width : 280px;
+	padding-top:13px;
+}
+
+/***********Email Confirm***************/
+.SignupConfirm{
+	width : 610px;
+}
+.SignupConfirm>.contentBody{
+	border-bottom: 1px solid #000;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody{
+	border-bottom: 1px dotted #000;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody>.signupConfirmInfo{
+	padding-top: 22px;
+	padding-bottom: 11px;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody>.clearthis p{
+	width : 170px;
+	float : left;
+	padding-bottom: 10px;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody div.signupConfirmEmail{
+	padding-bottom: 5px;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody div.signupErrorMessage{
+	display : none;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody div.signupConfirmEmail p{
+	width: 400px;
+}
+.SignupConfirm>.contentBody>.signupConfirminfobody label{
+	color: #777;
+}
+
+.SignupConfirm>.contentBody>.signupConfirmPrivateStatement p{
+	float : left;
+}
+.SignupConfirm>.contentBody>div.signupConfirmPrivateStatement {
+	padding:15px 0 2px 0;
+}
+.SignupConfirm>.contentBody>.signupConfirmPrivateStatement p.buttons{
+	width: 253px;
+	padding-bottom:0;
+	padding-top:10px;
+	
+}
+.SignupConfirm>.contentBody>.signupConfirmPrivateStatement p.info{
+	color: #777;
+    font-size: 10px;
+    line-height: 12px;
+    width: 300px;
+}
+.SignupConfirm>.confirmLoginform>.contentBody{
+	border-bottom : 1px solid #000;
+}
+.SignupConfirm>.confirmLoginform>.contentBody>.clearthis>p>input{
+	width:263px;
+}
+.SignupConfirm>.confirmLoginform>.contentBody .loginPasswordError{
+	display : none;
+}
+.SignupConfirm>.confirmLoginform>.contentBody>.clearthis>.confirmLoginEmail{
+	width : 274px;
+	padding:0 18px 3px 0;
+	float: left;
+}
+.SignupConfirm>.confirmLoginform>.contentBody>.clearthis>.confirmLoginPassword{
+	width : 274px;
+	float : left;
+	padding-bottom: 3px;
+	padding-left : 0;
+}
+.SignupConfirm>.confirmLoginform>.contentBody>.clearthis> p.buttons button{
+	margin-right:2px;
+}
+.SignupConfirm>.confirmLoginform>.contentBody>.clearthis p.buttons{
+	float : left;
+	padding-left: 292px;
+}
+.SignupConfirm .forgotLabel {
+	display: block;
+	float: left;
+}
+.SignupConfirm .forgotLabel>a {
+	font-size: 9px;
+}
+/************App Landing******************/
+
+.MyAppsHome>.zeroApp>.contentBody>.sectionHeader h4{
+	float : left;
+}
+.MyAppsHome>.zeroApp>.contentBody>.sectionHeader{
+	padding : 14px 0 10px 0;
+}
+.seeMoreVersionsDiv{
+	margin-top:18px;
+}
+.addNewApp{
+	margin-left : 10px;
+}
+.appCountDiv h4{
+	padding : 13px 0 16px 22px;
+}
+.seeMoreVersionsP {
+	border-top: 1px dotted #000;
+	font-size: 8px;
+	padding-top: 10px;
+	max-height: 8px;
+	text-align: right;
+}
+.appCountDiv {
+	background-image: url(images/contentBody-wide-bg.png);
+	border-bottom : 1px solid #000;
+}
+.appsTableContainer{
+	padding : 0 20px 0;
+}
+.appDetails {
+	border : 1px solid #000;
+	border-top-width: 0;
+}
+.appDetailsTitle{
+	border-bottom : 1px solid #000;
+	padding :  9px 16px 9px 20px;
+	background : #ecedef;
+}
+h3.appTitleLink a{
+	color : #000;
+	font-size: 14px;
+}
+.appsTable{
+	max-height:262px;
+	margin-bottom:15px;
+}
+.appsTable .appStatus p {
+	color: #777;
+	font-size: 8px;
+	margin: 0;
+	padding: 0;
+}
+.appsTable .appTitle, .appsTable .appAction {
+	padding-bottom: 5px;
+}
+.appsTable td {
+	vertical-align: bottom;
+}
+
+.appsTable .appStatus p {
+	padding:0;
+}
+.appsTable .appversion:first-child p{
+	padding:10px 0 0 0;
+}
+.appsTable .appStatus ul {
+	margin: 0;
+}
+.inlinebuttons{
+	margin-left: 5px;
+}
+.inlinebuttons button {
+	margin-left: 5px;
+}
+.inlinebuttons button:first-child {
+	margin-left: 0;
+}
+
+/*********Version History************/
+
+.MyAppsVersions>.contentBody{
+	padding : 0;
+	border-bottom : none;
+}
+.myAppsVersionHistoryDiv{
+	border-bottom : 1px solid #000;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv>.sectionHeader{
+	font-size : 18px;
+ 	padding-bottom : 7px;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv>.sectionHeader>span{
+	vertical-align: bottom;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv p{
+	padding-bottom : 10px;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv>p:last-child{
+	padding-bottom : 20px;
+	border-bottom : 1px dotted #000;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv>p button{
+	float : right;
+	margin-right: 0;
+}
+ 
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv{
+	padding: 15px 21px 0 21px;
+}
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv:last-child> p{
+	border-bottom : none;
+ }
+.MyAppsVersions>.contentBody>.myAppsVersionHistoryDiv>.versionInfoDiv:last-child{
+	border-bottom : none;
+ }
+.EditAppVersionInfo>.contentBody>.buttons button{
+	margin-right : 0;
+}
+.versionInfoDiv>div>p>button:last-child{
+	margin-left:10px;
+}
+
+/************** app home ***************/
+#MyAppVersionDetails>.contentBody {
+	border-bottom: 0;
+}
+#MyAppVersionDetails>.contentBody>.section {
+	border-bottom: 1px dotted #000;
+}
+#MyAppVersionDetails>.contentBody.inSandbox {
+	background: #fef8cd;
+}
+.appStatus {
+	padding-left: 2px;
+}
+.statusText {
+	font-size: 8px;
+	padding: 0;
+}
+.versionStatus{
+	background-color:#036;
+	color:#fff
+}
+#requestProductionAccess{
+	margin:0 0 0 5px;
+}
+#requestAPIAccessStatus{
+	margin : 0;
+}
+.versionsTable{
+	background: #cacac8;
+	border: 1px solid #000;
+	margin-bottom: 14px;
+	padding: 0;
+}
+.versionsTable ul, .versionsTable li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.versionsTable>li {
+	color: #fff;
+	float: left;
+	font-size: 8px;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 8px;
+	vertical-align: middle;
+}
+.versionsTable>li.versionStatus {
+	background: #002c5f;
+}
+.versionsTable>li.versionStatus.withEndcap {
+	background: #002c5f url(images/version_status_endcap.png) no-repeat right top;
+	padding-right: 11px;
+}
+.securityCred {
+	padding-bottom: 16px;
+}
+.securityCred>p {
+	padding-bottom: 5px;
+}
+.securityCred>p>input[type='radio']{
+	margin: 1px;
+	vertical-align:bottom;
+}
+.securityCred>p>label{
+	font-weight: bold;
+	padding: 0;
+	vertical-align:bottom;
+}
+.securityCred>p>button {
+	margin: 0;
+}
+.appStatus>.clearthis>ul, .appStatus>.clearthis>p {
+	float: left;
+}
+#sharedSecretData{
+	padding-left: 19px;
+	font-weight: bold;
+}
+.appStatus>p {
+	margin-top: -1px;
+}
+.versionTitle {
+	font-size: 9px;
+	line-height: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0 8px;
+}
+.appDesc>.sectionHeader {
+	padding-bottom: 5px;
+}
+.appDesc>.sectionHeader>h4, .appDesc>.sectionHeader>p {
+	padding-bottom: 0;
+}
+.securityHeader.sectionHeader {
+	padding-bottom: 30px;
+}
+
+/***********Support**********/
+
+.noBullets{
+	list-style-type: none;
+	padding:0 0 10px 30px;
+}		
+.supportContent>.contentBody{
+	padding-top:14px;
+	border-bottom : none;
+}
+.supportContent>.contentBody>div.supportList{
+	padding-bottom:11px;
+	border-bottom : 1px dotted #000;
+	margin-bottom : 14px;
+}
+.SupportEditor .contentBody{
+	border-bottom : 0;
+}
+.SupportEditor .disabledText{
+	color : #777;
+}
+.dottedDiv{
+	margin : 0 20px 14px 20px;
+	border-bottom : 1px dotted #000;
+}
+.supportContent>.contentBody>h4,.supportContent>.contentBody>p{
+	padding-bottom:11px;
+}
+.supportContent .disabledText{
+	color: #777;
+}
+.SupportForm>.contentBody{
+	border-bottom : 1px solid #000;
+}
+.SupportForm>.contentBody p.supportInputText{
+	width : 275px;
+}
+.SupportForm>.contentBody .supportSubmitFormEmailSubDiv{
+	width : 275px;
+	padding-right: 17px;
+	float : left;
+}
+.SupportForm>.contentBody .supportSubmitFormDiv>p{
+	padding-left: 0;
+}
+.SupportForm>.contentBody p.buttons button{
+	margin-right:0;
+}
+.SupportForm>.contentBody .supportSubmitFormDiv{
+	height : 120px;
+}
+.SupportForm>.contentBody form input{
+	width : 263px;
+	margin-top: 5px;
+}
+.SupportForm>.contentBody .supportSubmitFormDiv>p.buttons button{
+	margin-right : 0;
+}
+.supportQuestion{
+	border : 1px solid #000;
+	width : 409px;
+	margin-top : 4px;;
+	height : 78px;
+}
+.SupportForm>.contentBody p.buttons{
+	padding-bottom:38px;
+}
+
+.SupportForm>.contentBody p.supportInputTextarea{
+	width : 421px;
+	padding-bottom : 11px;
+}
+/*********** legal agreements **********/
+.devAgreeContent {
+	font-size: 13px;
+	line-height: 22px;
+}
+.devAgreeContent>h3 {
+	color: #000;
+	font-size: 13px;
+	font-variant: small-caps;
+	text-align: center;
+}
+.devAgreeContent>ol {
+	counter-reset: chapter;
+	list-style: none;
+}
+.devAgreeContent>ol>li:before {
+	content: counter(chapter) ". ";
+	counter-increment: chapter;
+}
+.devAgreeContent>ol>li>ol {
+	counter-reset: section;
+	list-style: none;
+}
+.devAgreeContent>ol>li>ol>li:before {
+	content: counter(chapter) "." counters(section,".") "  ";
+	counter-increment: section;
+}
+.devAgreeHighlight { /*for para with yellow highlight at top of legal agreement*/ 
+	background-color: #FF0;
+	text-align: center;
+}
+
+#inviteTeamMemberEmailText, #inviteGroupMemberEmailText, #inviteGroupMemberInviteText{
+	border:1px solid #000;
+	width:98%;
+	padding:0;
+}
+#inviteTeamMembersWidgetForm textarea#inviteTeamMemberEmailText{
+	width : 553px;
+	padding:5px 0  0 5px;
+	height:59px;
+}
+.inviteStatusText { 
+	width: 95%;
+	border: none; 
+	background-color: white;
+}
+
+.search .underline {
+	margin-left:-19px;
+	margin-right:-19px;
+	border-bottom: 1px solid #000;
+}
+.search h2 {
+    color: #002663;
+    padding: 21px 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.search h5 {
+	font-weight: bold;
+}
+
+.search .title {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.search .link {
+	color: #999999;
+}
+
+.search .linkContainer {
+	display:inline-block; 
+	padding-left:10px;
+	width:700px;
+	word-wrap: break-word;
+}
+
+.search .search-description {
+	padding-top: 7px;
+	padding-left: 10px;
+	border-bottom: 1px dotted #000;
+	word-wrap: break-word;
+}
+
+.search .search-description:last-child {
+	border-bottom: 0px dotted #000;
+}
+
+.search h2:last-child {
+	border-bottom: 0px dotted #000;
+}
+
+
+.helpText {
+	color:#999999;
+	font:12px arial, helvetica, sans-serif;
+}
+
+#MyAppsVersionInfoForm .helpText {
+	font-style:italic;
+	color:#999999;
+	padding-left:0px;
+}
+
+#MyAppsVersionInfoForm .helpTextClear {
+	font-style:normal;
+	color:#000;
+	padding-left:0px;
+}
+
+/***************** "add new app" form ******/
+#AddNewApp>.contentHeader{
+	padding:16px 21px;
+}
+.newappsection>.sectionHeader>h4>.requiredText{
+	color:#777;
+	font-size:11px;
+}
+#AddNewApp>#myAppEditInfoForm {
+	padding:13px 21px;
+}
+#myAppEditInfoSubmitForm{
+	margin-right: 5px;
+}
+#myAppEditInfoForm{
+	 border:0;
+}
+#myAppEditInfoForm  h4 {
+	padding-bottom: 12px;
+}
+#myAppEditInfoForm>.newappsection{
+	padding:0;
+}
+.apiaccessstatus{
+	width:45%;
+	padding-left:100px;
+	font-weight:bold;
+	font-size:13px;
+}
+.apiaccessstatus .status{
+	color: #008000;	
+	padding-left:58px;
+}
+
+/*************** Request API Access ************/
+.headerPanel.inPopup {
+	padding: 14px 21px 0;
+	border-bottom: 5px solid #000;
+}
+
+#pageOne {
+	height: 350px;
+	overflow-y: scroll;
+}
+
+#statusDialog {
+	padding-left: 10px;
+	height:335px;
+	overflow-y:auto;
+}
+
+#pageThree {
+	height: 350px;
+}
+
+#contentPageThree {
+	height: 280px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.showFooterLinks {
+	display: block;
+	text-align: right;
+}
+.titleLabel {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #002663;
+	padding: 10px 20px;
+}
+.servicename {
+	font-size: 17px;
+	color:#0F2145;
+}
+
+.hideFooterLinks {
+	display: none;
+}
+.hidestatusbtns{
+	display:none;
+}
+.showstatusbtns{
+	display:block;
+}
+#footerlinks {
+	margin-right: 15px;
+}
+
+#legalsButtons {
+	padding-top: 10px;
+	margin-right: 20px;
+	float: right;
+}
+#closeDialog{
+ 	margin-right: 20px;
+	float: right;
+}
+#progressBar {
+	background: none repeat scroll 0 0 silver;
+}
+
+.status {
+	padding: 10px;
+	font: 14px arial, helvetica, sans-serif;
+}
+
+#requestApiLockImage {
+	width: 10px;
+}
+
+#myAppsRequestAPIList {
+	margin-top: 10px;
+}
+.legaltop{
+	color : #777777;
+	font-size:10px;
+	height : 5px;
+}
+.legaltop>b{
+	color : #000;
+}
+.apiversiondd {
+	display: inline-table;
+	zoom: 1;
+	*display: inline;
+	width: 100px;
+	margin-left: 1px;
+}
+
+.apinamewrap {
+	line-height: 36px;
+}
+.statusapinamewrap{
+	padding: 10px 10px 10px 0;
+}
+#messages {
+	padding: 0 10px;
+}
+
+#agree {
+	margin: 10px 0 10px 20px;
+	width: 70%;
+	float: left;
+}
+
+.showapidivider {
+	
+}
+#myAppsRequestAPIAgreeButton{
+	margin : 0;
+}
+.hideapidivider {
+	display: none;
+}
+
+#legalPrintSaveButtons {
+	margin: 10px 0 10px 5px;
+	width: 21%;
+	float: right;
+}
+
+#RequestAPIAccessWidget .headerPanel ul,#MyAppAPIManagerDiv .headerPanel ul
+	{
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	*width: 270px;
+}
+
+#RequestAPIAccessWidget .headerPanel li,#MyAppAPIManagerDiv .headerPanel li
+	{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.showDesc {
+}
+
+.hideDesc {
+	display: none;
+}
+
+.horizontalDottedRow {
+	height: 0.5px;
+	border:none;
+	border-top: 1px dotted gray;;
+	color: gray;
+	width: 92%;
+}
+
+.horizontalRow {
+	height: 0.5px;
+	border: 1;
+	color: gray;
+	background-color: gray;
+	width: 92%;
+}
+.statushorizontalRow{
+	height: 0.5px;
+	border: 1;
+	color: gray;
+	background-color: gray;
+	width: 95%;
+}
+#apisTabs {
+	float: right;
+}
+
+#apisTabs li {
+	float: left;
+	vertical-align: top;
+}
+
+#apisTabs li span {
+	background: #fff;
+	border: 1px solid #b3b3b3;
+	border-bottom: none;
+	color: #b3b3b3;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	padding: 0 8px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#apisTabs li span.activeTab {
+	color: #000;
+	border-color: #000;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: -5px;
+	border-bottom: 5px solid #fff;
+}
+
+#apisTabs li span.inactiveTab {
+	border-color: #000;
+	height: 25px;
+	line-height: 25px;
+}
+
+#requestAccess>div {
+	position: relative;
+}
+
+#tabs {
+	border: 1.5px solid #000000;
+	margin: 0 20px 10px 20px;
+}
+
+#selectAPIsHead {
+	*width: 100px;
+}
+
+#legalAgreementsHead {
+	*width: 150px;
+}
+
+#legalAgreements {
+	font-size: 12px;
+	color: SteelBlue;
+	white-space: nowrap;
+}
+
+#legalAgreements>a {
+	font-size: 12px;
+	float: right;
+	font-weight: bold;
+	display: none;
+	margin-top: -15
+}
+
+.borderTopSolidGray {
+	border-top: 1px solid gray;
+}
+
+.apilist {
+	padding-left: 20px;
+	font-weight: bold;
+	width: 87%;
+}
+
+.apilistcheckbox {
+	padding-left: 14px;
+	width: 13%;
+}
+
+.description {
+	padding-left: 23px;
+	padding-right: 23px;
+}
+.appStatus>.clearthis>p{
+	padding-left:5px;
+}
+.appDesc>.clearthis>p{
+	padding-left:5px;
+}
+
+.selectapistext {
+	padding: 13px 0 8px 19px;
+	font: bold 10px arial,helvetica,sans-serif;
+}
+
+/************App/Api Title Widget ******/
+.appTitle {
+	color: #00693c;
+}
+.TalkboxTitle {
+	position: relative;
+	border-bottom: 5px solid #000;
+}
+.TalkboxTitle .buttons:first-child {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.TalkboxTitle>h1 {
+	padding: 15px 20px 8px;
+}
+.talkboxLinkPanel {
+	font-size: 11px;
+	padding: 0 20px;
+	font-weight: bold;
+}
+.talkboxLinkPanel>button, .talkboxLinkPanel>ul>li>button {
+	border-top-width: 0;
+	border-left-width: 0;
+	line-height: 15px;
+	margin-left: 6px;
+	padding: 1px 4px 0 6px;
+	position: relative;
+	top: 2px;
+}
+.talkboxLinkPanel>button.inset, .talkboxLinkPanel>ul>li>button.inset {
+	border-top: 2px solid #464646;
+	border-left: 2px solid #464646; /*previously inset, 0, and another color, worth the extra keystrokes*/
+	border-right-width: 0;
+	border-bottom-width: 0;
+	line-height: 15px;
+	padding-top: 1px;
+}
+.talkboxLinkPanel>h5, .talkboxLinkPanel>ul, .talkboxLinkPanel>ul>li {
+	float: left;
+	list-style: none;
+}
+.talkboxLinkPanel>h5 {
+	padding-top: 6px;
+}
+@-moz-document url-prefix() {
+	/* not thrilled about this hack, but FF adds extra padding in button text when line breaks are in the code (for no reason), and all other browsers ignore the line breaks */
+	.talkboxLinkPanel>button {
+		line-height: 14px;
+		padding: 0 4px 0 1px;
+		top: 0;
+	}
+	.talkboxLinkPanel>button.inset {
+		line-height: 10px;
+		padding-top: 3px;
+		top: -1px;
+	}
+}
+#discussion_options.contentBody {
+	padding: 0 22px 0 19px;
+}
+.boardFilter {
+	padding: 11px 0;
+}
+.boardFilter>ul {
+	background: #f3f3f3;
+	padding: 0 12px 0 0;
+}
+.boardFilter>ul>li {
+	float: left;
+	list-style: none;
+	padding-left: 12px;
+	height: 42px;
+}
+.boardFilter>ul>li:first-child {
+	background: #fff;
+	padding: 0 12px 0 0;
+	padding-left: 0;
+	padding-right: 12px;
+}
+.boardFilter>ul>li>label {
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px 0 2px;
+}
+.boardFilter>ul>li.searchoption>label {
+	padding-bottom: 1px;
+}
+.boardFilter .tagText {
+	font-size: 9px;
+	height: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+}
+td.appTitleAppName{
+	width : auto;
+}
+td.apiTitleAppName{
+	width : 328px;
+}
+.createGroupButton{
+	margin-top: 7px;
+	margin-right : 10px;
+	float : right;
+}
+.APIversionDropDownDiv{
+	width : 140px;
+}
+.ApiTitle>.contentHeader{
+	padding-right : 0px;
+}
+.ApiTitle>.contentHeader>h1{
+	display: inline-block;
+}
+.AppTitleWidget>.contentHeader>h1{
+	display: inline-block;
+}
+.APPdetailsDropDownDiv{
+	width : 140px;
+}
+
+/****** API related *******/
+.apiLockImage {
+	background-image: url(images/DevEx_PrivateAPI_Lock_01.26.png);
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	width: 15px;
+}
+
+/**********MyAppsHomeEditAppVersion************/
+
+.MyAppsHomeEditAppVersionInfo .buttons>li:last-child>button{
+	margin-right : 0;
+}
+
+.MyAppsHomeEditAppVersionInfo  .contentBody .menu_parent .helpTextItalics{
+	font-style : italic;
+}
+.MyAppInfo .contentBody .buttons>li:last-child>button{
+	margin-right : 4px;
+}
+
+/*******Offering and Gallery******/
+.GalleryEditor .contentBody{
+	padding : 0 21px;
+	background-image: url(images/contentBody-wide-bg.png);
+}
+.GalleryEditor .contentBody h4{
+	padding : 15px 0 12px 0;
+}
+.GalleryEditor .contentBody>h2{
+	padding-bottom : 10px;
+}
+.GalleryEditor .contentBody h3{
+	padding-bottom : 30px;
+	color : #777;
+}
+#editor_Offerings_container>form>.editable .contentBody{
+	padding : 0 21px;
+}
+#editor_Offerings_container>form>.editable .contentBody>h4{
+	padding : 15px 0 12px 0;
+}
+.offeringColumnDivsFirst{
+	border-right: 1px dotted #000;
+	float: left; 
+	width: 232px;
+}
+
+.offeringColumnDivsSecond{
+	float: left; 
+	width: 250px;
+}
+.offeringColumnDivsLast{
+	float: left; 
+	width: 230px;
+}
+
+.offeringInnerColumnDivs{
+	padding: 0 10px 20px 10px;
+}
+.offeringInnerColumnFirstDivs{
+	padding: 0 10px 0 0;
+
+}
+.columnHead{
+	border-bottom : 1px solid #000;
+	margin-bottom : 14px;
+	padding-bottom : 3px;
+}
+.offeringInnerColumnLastDivs{
+	border-left : 1px dotted #000;
+	padding: 0 0 20px 14px;
+}
+
+.offeringColumnDivsWrapper{
+	padding-top: 10px;
+	height : 160px;
+}
+
+.noBackground {
+	background: none;
+}
+
+
+/*****************print styles ******/
+.printDiv{
+	padding-top : 100px;
+	text-align:justify;
+}
+
+@media print{
+  #Main, #container_Header, #container_Footer, #container_Content, .Content-Widest, .Content-Wide {
+    width: auto;
+    text-align : justify;
+	}
+	.printDiv{
+	padding : 0;
+	}
+	.printDiv>p.buttons{
+	display : none;
+	}
+}
+
+
+/************** AppAPIManager ***********/
+
+#MyAppAPIManagerDiv {
+	border-bottom: 1px solid #000;
+	background: url(images/contentBody-bg.png) repeat-y;
+}
+
+#MyAppAPIManagerDiv.inSandbox {
+	background: #fef8cd;
+}
+
+
+.appAPI {
+	border: 1px solid;
+}
+.apitable {
+padding-bottom: 10px;
+}
+.appAPITitle {
+	background-color: #ecedef;
+	border-bottom: 1px solid;
+	padding: 0 5px;
+	font: bold 12px/30px arial, helvetica, sans-serif;
+}
+
+.appAPITitle .appAPIName {
+	padding-left:5px;
+}
+
+.appAPITitle .appAPIShowHide {
+	float: right;
+	font: 11px/30px arial, helvetica, sans-serif;
+	padding-right: 5px;
+}
+.appAPIDetail {
+	padding: 0 5px;
+	background-color: #fff;
+}
+#ShowHideEpArrow{
+	margin-bottom:2px;
+}
+.appAPIActiveContract{
+	color:green;
+	text-transform:uppercase;
+	font-weight: bold;
+	vertical-align:bottom;
+}
+.prodAppAPIActiveContract{
+	color:#F5C207;
+	text-transform:uppercase;
+	font-weight: bold;
+	vertical-align:bottom;
+	font-size:12px ;
+}
+.appAPIStateActions>span{
+	vertical-align:bottom;
+}
+#executeWorkflowAction{
+	margin-bottom: 5px;
+}
+.appAPIinActiveContract{
+	color:red;
+	font-weight: bold;
+}
+.appAPIStateActions {
+	font: 12px/30px arial, helvetica, sans-serif;
+	padding: 0 5px;
+}
+
+.appAPIEndpoints {
+	font: 11px/28px arial, helvetica, sans-serif;
+	padding: 0 5px;
+}
+.appAPIEndpoints label {
+	color: #006890;
+}
+
+.appAPIEndpoints #sandBoxEndPoint{
+	border-top : 1px dotted;
+}
+
+
+/************** End Of AppAPIManager ***********/
+
+
+/************** Personal Info Widget ***********/
+#PersonalInfoDetailsDiv .leftColumn {
+	float:left;
+	height:280px;
+	padding-top:25px;
+	padding-right:10px;
+	width:160px;
+}
+
+#PersonalInfoDetailsDiv .rightColumn {
+	float:right;
+	height:280px;
+	padding-top:25px;
+	padding-right:10px;
+	width:500px;
+}
+
+#PersonalInfoDetailsDiv .title {
+	font-weight: bold;
+}
+
+#PersonalInfoDetailsDiv .value {
+	word-wrap: break-word; 
+	max-width: 287px;
+}
+
+#PersonalInfoDetailsDiv {
+	overflow: hidden;
+}
+
+#personalInfoRight p {
+	padding-top:5px;
+	padding-bottom:5px;
+	border-bottom: 1px solid black;
+	align: left;
+	vertical-align: middle;
+}
+
+
+#PersonalInfoDetailsDiv .sectionTitle {
+	font-size: 18px;
+	font-weight: bold;
+	color: #006890;	
+	line-height: 24px;
+	border-bottom: 3px solid black;
+}
+
+/**************End of Personal Info Widget  ***********/
+
+/************** Team Members Widget ***********/
+
+#myAppsInviteButton {
+	margin:  0 0 7px 10px;
+}
+
+/************** End of  Team Members Widget ***********/
+
+/************** Board Items Widget ***********/
+#boarditemscontainer {
+	background: url(images/contentBody-bg.png) repeat-y;
+    padding: 0;
+    width: 610px;
+}
+#boarditemscontainer.forDashboard {
+	background-image: url(images/contentBody-wide-bg.png);
+	width: auto;
+}
+#boarditemscontainer .NOACTIVITY {
+	padding: 10px 16px;
+}
+.viewDetailLink:hover {
+	color: #006890;
+}
+.discussionItem {
+	background: url(images/boardItem-bottomrule.png) center top no-repeat;
+	padding: 20px 20px 15px 19px;
+}
+.discussionItem:first-child {
+	background: none;
+}
+.discussionItem>h5, .item_comment>h6 {
+	color: #a5a5a5;
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 14px;
+	padding-right: 30px;
+	width: 50px;
+	word-wrap: break-word;
+}
+.discussionItemContent, .item_comment_description {
+	float: left;
+	margin-top: -5px;
+	width: 488px;
+	word-wrap: break-word;
+}
+.forDashboard .discussionItemContent, .forDashboard .item_comment_description {
+	width: 634px;
+}
+.discussionItemContent>h4 {
+	font-size: 14px;
+	padding: 0;
+	word-wrap: break-word;
+}
+.discussionItemContent>h4>span {
+	cursor: pointer;
+}
+.discussionItemContent .description {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #000;
+	padding: 0 0 10px;
+}
+.discussionItemContent .description>p {
+	font-weight: normal;
+	padding: 10px 0 0;
+}
+.discussionItemContent .description>p:first-child {
+	padding-top: 0;
+}
+.discussionItemContent>h4 {
+	background: no-repeat right top;
+}
+.ticket .discussionItemContent>h4 {
+	background-image: url(images/boardtypes/ticket.png);
+	padding-right: 55px;
+}
+.alert .discussionItemContent>h4 {
+	background-image: url(images/boardtypes/alert.png);
+	padding-right: 62px;
+}
+.discussion .discussionItemContent>h4, .review .discussionItemContent>h4 {
+	background-image: url(images/boardtypes/post.png);
+	padding-right: 54px;
+}
+.contracts .discussionItemContent>h4, .groupmembers .discussionItemContent>h4 {
+	background-image: url(images/boardtypes/request.png);
+	padding-right: 72px;
+}
+
+.discussionItemDetails, .discussionItemTools {
+	font-size: 11px;
+}
+.discussionItem p.ticketPriority {
+	width: 75px;
+}
+.discussionItemTools {
+	padding: 1px 0 9px;
+}
+.discussionItemTools>p {
+	width: auto;
+}
+.discussionItemTools>p.markP {
+	width: 68px;
+	padding: 0 0 0 30px;
+}
+.discussionItemTools>p.buttons {
+	float: right;
+	padding: 0;
+}
+.discussionItemDetails>dt, .discussionItemDetails>dd {
+	display: inline;
+}
+.discussionItemDetails>dt {
+	font-weight: bold;
+}
+.discussionItemDetails>dt:before {
+	content: "     ";
+}
+.discussionItemDetails>dt:first-child:before {
+	content: "";
+}
+.createdDateTime {
+	color: #929191;
+}
+.createdDateTime, .discussionItemTools>p, .createdDateTime>dt, .createdDateTime>dd {
+	float: left;
+	line-height: 23px;
+	padding: 0 0 0 5px;
+}
+.createdDateTime>dd.createdDate {
+	padding-left: 0;
+}
+.createdDateTime, .createdDateTime>dt:first-child {
+	padding: 0;
+}
+
+.required_message{
+	float:right;
+	margin:-15px 20px 0;
+}
+.talkboxTags {
+	list-style: none;
+	text-transform:uppercase;
+	padding-bottom: 0px;
+}
+.talkboxTags>li {
+	display: inline;
+	font-size: 10px;
+}
+.talkboxTags>li>a {
+	background: #ebeeee;
+	color: #006e8e;
+	display: inline-block;
+	line-height: 12px;
+	margin-left: 3px;
+	padding: 2px 4px 0;
+	vertical-align: middle;
+}
+.talkboxTags>li:first-child {
+	margin: 0;
+}
+div.itemclosed {
+	font-size: 11px;
+	margin: 10px 0;
+	border: 1px solid #aaa;
+	background: #f1f1f1;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+div.comments_list {
+	margin-bottom: 8px;
+}
+.view_all_comments {
+	background: #ebeeee;
+	color: #002663;
+	font-size: 11px;
+	margin-bottom: 10px;
+	margin-top:10px;
+	padding: 10px 10px 6px;
+}
+.view_all_comments:after {
+	content: url(images/arrow-right-002663.png);
+	margin-left: 8px;
+}
+.view_all_comments.collapse:after {
+	content: "";
+}
+.view_all_comments.collapse:before {
+	content: url(images/arrow-left-002663.png);
+}
+.view_all_comments, .commenttextwrap {
+	cursor: pointer;
+	display: none;
+}
+.view_all_comments.active, .commenttextwrap.active {
+	display: block;
+}
+.newCommentForm>h5 {
+	font-size: 11px;
+	font-weight: bold;
+}
+.discussionItem .helperText, .commenttextarea {
+	width: 475px; 
+}
+.forDashboard .discussionItem .helperText, .forDashboard .commenttextarea {
+	width: 622px; 
+}
+.item_comment {
+	background: #f3f3f3;
+	padding: 10px 10px 5px;
+	margin-top: 10px;
+}
+.item_comment:first-child {
+	margin: 0;
+}
+.item_comment>h6 {
+	width: 25px;
+	padding-right: 10px;
+}
+.item_comment_description {
+	background: none;
+	margin-top: -3px;
+	width: 421px;
+}
+.item_comment_description>ul, .item_comment_description>p {
+	padding-bottom: 4px;
+	font-size: 11px;
+}
+.item_comment_description>ul {
+	color: #8b8a8a;
+	list-style: none;
+}
+.item_comment_description>ul>li {
+	float: left;
+	padding-left: 28px;
+}
+.item_comment_description>ul>li:first-child {
+	padding: 0;
+}
+
+/************Authorization error***************/
+
+.AuthorizationError>.contentHeader>span>h1{
+	width : 448px;
+	display : inline-block;
+}
+
+.AuthorizationError>.contentBody{
+	padding: 21px;
+}
+.AuthorizationError>.contentBody>div.authImage{
+	padding-right : 10px;
+	width : 30px;
+	float : left;
+	height : 40px;
+}
+.AuthorizationError>.contentBody>div.authImage>img{
+	padding-top : 2px;
+}
+.AuthorizationError>.contentBody>div.authMessage{
+	width : 550px;
+}
+.AuthorizationError>.contentBody>div.authMessage>p{
+	padding : 0;
+}
+.AuthorizationError>.contentBody>div.authMessage>p:first-child{
+	font-weight : bold;
+	font-size : 14px;
+}
+
+
+/**************Home Landing ***********/
+
+
+.Landing .contentBody {
+	padding : 0 21px;
+	background-image: url(images/contentBody-wide-bg.png);
+}
+.Landing .contentBody>.upperDiv>.leftDiv {
+	width : 320px;
+	float : left;
+}
+.Landing .contentBody>.upperDiv>.rightDiv {
+	width : 390px;
+	float : left;
+}
+.Landing .contentBody>.upperDiv>.rightDiv>img{
+	padding-left : 20px;
+}
+.Landing .contentBody>.upperDiv>.leftDiv>h1{
+	padding-top:10px;
+	font-size : 30px;
+}
+.Landing .contentBody>.upperDiv>.leftDiv>h4{
+	padding-top:20px;
+	padding-bottom:23px;
+	font-size : 24px;
+	color : #777;
+}
+.Landing .contentBody>.upperDiv>.leftDiv>div{
+	border-top : 1px solid #cbd1d6;
+	border-bottom : 1px solid #cbd1d6;
+	padding-top:10px;
+	padding-bottom:6px;
+}
+.Landing .contentBody>.upperDiv>.leftDiv>div>h4{
+	font-size : 12px;
+	font-weight : bold;
+	padding-left: 17px;
+	padding-top: 2px;
+	float : left;
+}
+.Landing .contentBody>.upperDiv>.leftDiv>div>button{
+	float : left;
+	width : 70px;
+	height : 25px;
+	color : #fff;
+	font-weight : bold;
+	font-size : 10px;
+	text-transform: capitalize;
+	padding-left:3px;
+}
+.Landing .topDiv{
+	border-bottom:5px solid #000;
+}
+.Landing .contentBody>.lowerDiv{
+	padding:22px 0 18px 0;
+}
+.Landing .contentBody>.lowerDiv>span{
+	font-weight:bold;
+	font-size:14px;
+	color: #002663;
+	letter-spacing:-0.5px;
+}
+.Landing .middleDiv{
+	height : 39px;
+	padding-right : 5px;
+	font-size : 10px;
+	color: #002663;
+	font-weight: bold;
+}
+.Landing .middleDiv div{
+	padding:12px 0 11px 0;
+}
+.Landing .middleDiv img{
+	vertical-align:text-bottom;
+	padding-right : 6px;
+}
+.Landing .middleDiv>.leftDiv{
+	width : 588px;
+	float : left;
+	background-image:url(images/verticle_blk_square.gif);
+	background-position:right;
+	background-repeat:repeat-y;	
+}
+.Landing .middleDiv>.rightDiv{
+	width : 125px;
+	float : left;
+	padding-left:15px;
+}
+.Landing .bottomDiv>.leftDiv{
+	padding:14px 21px 13px 21px;
+	width:566px;
+	float : left;
+	background: url(images/verticle_blk_square.gif) left repeat-y;
+	border-bottom : 1px solid #000;	
+}
+.Landing .bottomDiv p{
+	padding:0;
+}
+.Landing .bottomDiv .rightDivBorder{
+	background: url(images/verticle_blk_square.gif) left repeat-y;
+}
+.Landing .bottomDiv>.rightDiv{
+	float : left;
+	background: url(images/verticle_blk_square.gif) right repeat-y;
+	border-bottom : 1px solid #000;
+}
+.Landing .bottomDiv>.rightDiv>.rightDivLeftBorder>.date{
+	color : #777;
+}
+.Landing .bottomDiv>.rightDiv>.rightDivLeftBorder>img{
+	padding : 5px 0 3px 0;
+	height : 75px;
+	width : 115px;
+}
+.Landing .bottomDiv>.rightDiv>.rightDivLeftBorder>.welcome{
+	color: #002663;
+	font-weight : bold;
+}
+.Landing .bottomDiv>.rightDiv>.rightDivLeftBorder{
+	width:117px;
+	padding: 15px;
+	background: url(images/verticle_blk_square.gif) left repeat-y;
+}
+a.MORE{
+	background: url(images/banner-arrow.png) right no-repeat;
+	padding-right: 9px;
+}
+/************** End of Board Items Widget ***********/
+
+
+.notificationsLabel {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px 0 0 18px;
+    background-color:#fef8cd;
+}
+.notificationsList{
+	padding: 8px 19px 1px 20px;
+	background-color:#fef8cd;
+}
+
+
+.accountSettingsDivider {
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	margin-left: -19px;
+	margin-right: -19px;
+}
+
+#emailNotificationsEditForm h4 {
+	padding-bottom: 0px;
+}
+
+#emailNotificationsEditForm ul {
+	list-style:none;
+}
+
+#notificationsPanel .contentBody {
+      background-image: url(images/contentBody-wide-bg.png);
+      border-bottom: 1px solid #000;
+      padding-left: 1px;
+      padding-right: 1px;
+}
+
+
+
+#accountSettingsNotice {
+		display:none;
+		float:right;
+		padding-bottom:20px;
+		width: 283px;
+}
+
+/*---------- jquery ui dialog style ----------*/
+.ui-dialog {
+	background: #fff; 
+	overflow: hidden;
+	position: absolute;
+}
+.ui-dialog.errorinfo {
+	padding: 20px 20px 0;
+}
+.ui-dialog-titlebar-close {
+	display: none;
+}
+.ui-dialog-titlebar {
+	background: #fff;
+	border-bottom: 1px dotted #000;
+	color: #002663;
+	font-size: 18px;
+	line-height: 17px;
+	margin-bottom: 13px;
+	padding: 0 1px 13px;
+}
+.ui-dialog-buttonset {
+	text-align: right;
+	background: #fff;
+	padding: 4px 0 14px;
+}
+.ui-dialog-content>h3 {
+	color: #000;
+	font-weight: normal;
+	font-size: 12px;
+	padding-bottom: 7px;
+}
+.ui-dialog-content>p {
+	font-weight: bold;
+	padding-bottom: 7px;
+}
+.ui-widget-content .ui-state-default.action_call, .ui-state-default.action_call {
+	background-image: none;
+	font-weight: bold;
+}
+.ui-dialog .ui-button-text-only .ui-button-text {
+	padding: 0;
+}
+.ui-dialog .ui-button .ui-button-text {
+	display: inline;
+	line-height: normal;
+}
+/* Overlays */
+.ui-widget-overlay { 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background: #000;
+	/*	background: #666 url(images/blk_diagonal_popup_overlay.gif);*/
+	opacity: .6;
+	filter:Alpha(Opacity=60); 
+}
+
+
+#requestPAForm input[type='text'], input[type='password'] , textarea {
+	width: 558px; 
+}
+
+/*---------- css for apidoc ----------*/
+
+/*---------- container for apidoc ----------*/
+.editable .apidocContent {
+	background: url(images/contentBody-bg.png) repeat-y;
+	padding: 0 20px 15px;
+	border-bottom : 1px solid #000;
+}
+
+/*---------- paragraph styles ----------*/
+
+.apidocContent p {
+	display: block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+	padding-bottom: 6px; /*reduced from 12 to 6, 5/15/12, as spacing is too much in DevExchange*/
+	padding-top: 0;
+}
+
+span.apidoc_code { /*span tag for inline code formatting*/
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+}
+
+p.apidoc_note { /*Notes in paragraphs: pale gray background; replace .apidoc_note with this*/
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #F6F6F6; /*Very pale gray background*/
+	padding: 11px;
+	display:block;
+}
+
+.apidoc_note { /*span tag for note in procedures added 1 Mar 12.*/
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #F6F6F6; /*Very pale gray background*/
+	padding: 11px;
+	display:block;
+}
+
+p.apidoc_image_p { /*Added 1/31/12 for scroll bar below images. Extra overflow property.*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	overflow-x:auto;
+}
+
+.apidoc_image_p { /*span tag for images in procedures, with display:block.*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	overflow-x:auto;
+	display:block;
+}
+
+.apidoc_overflow { /*Added 1/31/12 for scroll bar below images. Inline style.*/
+	overflow-x:auto;
+}
+
+.apidoc_p_subsequent {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	padding-bottom: 3px;
+}
+
+p.apidoc_backtotop { /* horiz rule for below back to top lines */
+	border-bottom: 2px solid gray; 
+	padding-top: 12px;
+	padding-bottom: 8px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	color: #000000;
+}
+
+span.apidoc_requestelementname { /*bold for request element name per wireframe design*/
+	color: #000000;
+	font-weight: bold;
+}
+
+span.apidoc_requestvalue { /*green 00693C for request value per wireframe design*/
+	color: #00693C;
+}
+
+/*---------- code styles ----------*/
+
+pre.apidoc_pre { /*Message and code samples: black monospace on gray background, scroll bar.*/
+	background: #F8F4EE;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 11px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	overflow-x:auto;
+	line-height: 15px;
+}
+
+.apidocContent pre { /*Message and code samples: black monospace on gray background, scroll bar. Same as pre.apidoc_pre which is to be retired later.*/
+	background: #F8F4EE;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 11px;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	overflow-x:auto;
+	line-height: 15px;
+}
+
+div.apidoc_div_codeendpoint { /*endpoint only: green monospace on pale gray background, scroll bar*/
+	padding: 2px;
+	MARGIN: 2px;
+	BACKGROUND: #F8F4EE;
+	font-family: "Courier New", Courier, monospace;
+	color: #00693C; /*green 00693C per wireframe design*/
+	font-size: 11px;
+	overflow-x:auto;
+	padding-top: 8px;
+	padding-bottom: 6px;
+}
+
+/*---------- ^L List Styles ----------*/
+
+.apidocContent ul, .apidocContent ul li, .apidocContent ol, .apidocContent ol li {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	margin-left: 13px;
+	padding-left: 8px;
+}
+
+.apidocContent ul, .apidocContent ul li {
+	list-style: disc;
+}
+
+.apidocContent ul li, .apidocContent ol li {
+	padding-top: 1px;
+	padding-bottom: 3px; 
+}
+
+.apidocContent ol li p{ /*ordered list item subsequent paragraph less space above. Font info included for RH output.*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+}
+
+.apidocContent ul {
+	padding-bottom: 3px;
+}
+
+.apidocContent ul li p{ /*unordered list item subsequent paragraph less space above.*/
+	line-height: 16px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+}
+
+/*---------- heading styles ----------*/
+
+.apidocContent h2 { /*Top-level topic heading*/ 
+	color: #002663;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	padding-top: 12px; /*padding instead of margin 3/24 for dot border. padding top/bottom changed from 12/12 to 12/6 5/16/12 as spacing is too much in DE*/
+	padding-bottom: 6px;
+}
+
+.apidocContent h3 { /*Second-level topic heading*/
+	color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold; /*3/14 compensate for reset*/
+	padding: 0px;
+	line-height: 24px;
+	padding-top: 16px; /*margin top/bottom changed from 18/12 to 16/8 5/16/12 as spacing is too much in DevExchange*/
+	padding-bottom: 8px;
+}
+
+.apidocContent h4 { /*Third-level topic heading*/
+	color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	padding-top: 10px; /*reduced from 20 to 10, 5/15/12, as spacing is too much in DE*/
+	padding-bottom: 5px; /*reduced from 10 to 5, 5/15/12, as spacing is too much in DE*/
+}
+
+.apidocContent h5 { /*Fourth-level topic heading including procedure headings*/
+	color: #002663;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold; /*3/14 compensate for reset*/
+	padding: 0px; /*3/14 compensate for reset*/
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+/*---------- definition list styles (for glossary) ----------*/
+
+dl.apidoc_dl { /*definition list*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px
+}
+
+dl.apidoc_dl dt { /*glossary term*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+dl.apidoc_dl dd { /*glossary definition*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 12px;
+	padding-left: 18px;
+}
+
+/*---------- ^T Table Styles ----------*/
+
+.tableparmsresponse { /*table for request and response parameters*/
+	text-align: left;
+	padding-bottom: 14px;
+}
+
+th.apidoc_th { /*table header font and alignment only, for tables without lines*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	vertical-align:top;
+	color: #000000;
+}
+
+.tableparmsresponse th { /*table header for parameter table*/
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #000000;
+	font-size: 11px;
+	text-align: left;
+	vertical-align:top;
+	color: #000000;
+	background-color: #F8F4EE;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+}
+
+.tableparmsresponse td { /*table text*/
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #000000;
+	font-size: 11px;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+}
+
+.tableparmsresponse tr td p{ /*table text subsequent paragraphs*/
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	vertical-align: top;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	line-height: 14px;
+}
+
+/*---------- end of css for apidoc ----------*/
+
+.collection_item_extensions {
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-bottom:10px;
+	font-size: 10px;
+	
+}
+
+.collection_item_actions {
+	margin: 10px 0 0 25px;
+}
+.collection_item_container {
+	padding: 5px 0;	
+}
+.FollowersCollection .collection_item_container {
+	border-bottom: 2px solid black;
+}
+.collection_item_container:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.collection_item_title a:link,.collection_item_title a:visited,.collection_item_title a:active,.collection_item_title a:hover
+ {
+	color: #2683b4;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.collection_item_img  img {
+	float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.collection_item_logo {
+	padding: 2px 0 0 5px;	
+	float: left;
+}
+
+.collection_item_title {
+	margin: 4px 0 0 5px;
+	padding-left: 54px;
+}
+
+.collection_item_description {
+	margin: 10px 0;
+	padding-left: 58px;
+	font-size: 12px;
+	clear: both;
+}
+
+.search_ext_name {
+	font-weight: bold;
+}
+
+.search_ext_value {
+	color: #2683B4;
+}
+
+
+.search_result_divider {
+	padding-top: 10px;
+	border-bottom: solid 1px #add8e6;
+}
+
+.search_item_title {
+	color: #2683b4;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 3px 0 0 25px;
+	padding-left: 30px;	
+}
+
+.search_item_description {
+	margin: 3px 0 0 25px;
+	padding-left: 30px;	
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+#searchResultsWrapper {
+	background: url(images/contentBody-wide-bg.png) repeat-y;
+	border-bottom: 1px solid #000;
+	padding: 0 21px;
+}
+
+.ResourceTitle h1 {
+	background: #d6dadc;
+	border-bottom: 5px solid #000;
+	padding: 10px 20px 7px;
+}
+/*---------------Chart and Log styles ------------*/
+#PerformanceChart {
+	padding:0 20px;
+}
+
+/*---------------Chart and Log styles ------------*/
+
+.write_a_comment_cntr{
+	padding-bottom:0px; 
+}
+.action_message{
+	padding-bottom:0px;
+}
+
+/*** Edit Personnel Info **********/
+
+#personalInfoEditDiv .rowsButton button {
+	margin: 15px 0 15px 0;
+}
+#personalInfoEditDiv .rowsButton button:first-child{
+	margin-right:5px;
+}
+#personalInfoEditForm .rowsButton {
+	text-align: right;
+	width: 96%;
+}
+/*** End of Edit Personnel Info **********/
+
+.download{
+	margin-right:3px;
+}
+#MyAppsVersionInfoForm{
+	padding-bottom:15px;
+}
+#inviteTeamMembersWidgetForm {
+    padding-bottom: 15px;
+}
+
+/***Hackanthon**/
+
+#personalInfoEditForm form {
+    border-bottom: 1px solid #555;
+    font-size: 13px;
+	padding: 20px 0 0 3px;
+    width: 590px;
+}
+
+#personalInfoEditForm fieldset {
+    border: none;
+    padding: 5px 0 0 19px;
+}
+#personalInfoEditForm label {
+	display: block;
+	padding-bottom: 5px;
+}
+#personalInfoEditForm .titleFull {
+	padding: 10px 10px 0 0;
+	width: 275px;
+}
+
+#personalInfoEditForm .titleFull input {
+}
+
+#personalInfoEditForm .titleHalf input {
+	margin: 5px 15px 0 0;
+}
+
+#personalInfoEditForm .titleHalf {
+	float:left;
+	padding: 10px 20px 4px 0;
+	width: 275px;
+}
+.titleHalf{
+	padding: 10px 20px 4px 0;
+	width: 275px;
+}
+
+#personalInfoEditDiv li {
+	list-style:none;
+	width:300px;
+	float:left;
+}
+#personalInfoEditDiv li label {
+	display: inline;
+}
+#personalInfoEditLanguages,
+#personalInfoEditFrameworks {
+	float: left;
+	padding: 20px 15px 5px 0;
+	width: 280px;
+}
+
+#personalInfoEditUploadProfileButton {
+	vertical-align:top;
+}
+
+#personalInfoEditForm img {
+	max-width: 120px;
+	width: expression(this.width > 120 ? 120: true);
+}
+
+.personalProfileEditPicture  {
+    border: 1px solid #e5e5e5;
+	border-left: none;
+	border-right: none;
+	margin: 18px 0 14px;
+	padding: 18px 0 18px 3px;
+	width: 555px;
+}
+#personalInfoEditForm .personalJobInfo>.titleHalf{
+	padding-top : 0;
+}
+
+.personalProfileEditPicture .rows:first-child {
+	padding-bottom: 6px;
+}
+
+.personalInfoEditFavoriteRow {
+	padding-top: 5px;
+	width: 95%;
+}
+.personalInfoProfileEditRow {
+	padding: 20px 0 0 0;
+	text-align: right;
+}
+
+.personalInfoProfileButtonRow {
+	padding: 30px 20px 20px 20px;
+	text-align: right;
+}
+
+#personalInfoProfileForm {
+	width: 95%;
+}
+
+#personalInfoProfilePicError{
+	padding-left: 145px;
+	font-style:italic;
+	color: red;
+	display: none;
+}
+
+#personalInfoProfilePicErrordiv{
+	height:15px;
+}
+#personalInfoEditFavorites {
+    border-radius: 0;
+	height: 22px;
+	line-height: 20px;
+	margin: 0;
+    padding : 3px 0 4px 7px;
+    font : 12px/24px arial,helvetica,sans-serif;
+    width: 100%;
+	vertical-align: middle;
+}
+.personalInfoProfileEditRow {
+	padding-left: 30px;
+}
+
+.EditProfileHelpText1>.csHelpContainer>h2{
+	margin-bottom : 20px;
+}
+.PersonalInfoEdit .requiredTitle{
+	color : #777;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+#uploaderForm{
+	width:95%;
+	padding: 20px 0 0 30px;
+	text-align:right;
+}
+
+.formSave{
+	display:none;
+}
+
+.filelabel {
+	float: left;
+	padding: 2px 10px 0 0;
+}
+.fileinput {
+	float: left;
+	text-align: left;
+}
+#uploaderForm>.fileinput>.inputdesc {
+	font-size: 11px;
+	padding: 5px 0;
+}
+
+#uploaderForm .fakedInputBox{
+	background-color:#FFF;
+	color:#000;
+	width:275px;
+}
+
+#browseFile{
+	margin-left:10px;
+}
+
+ul.buttons{
+	padding:0 20px 20px;
+}
+
+div.uploader div.uploaderPreview div.failed {
+	text-align:center;
+	color: #ff0000 !important;
+	margin-top:20px;
+}
+div.wsdlUploader div.uploaderPreview div.failed {
+	line-height: 80px;
+	height: 80px;
+}
+div.uploader div.uploaderPreview div.failed div.message {
+	line-height: 12px;
+    padding: 20px;
+}
+div.uploader div.uploaderPreview p {
+	margin: 0;
+}
+div.uploader div.uploaderPreview div.cropper {
+	width: 600px;
+}
+div.uploader div.uploaderPreview div.cropper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+div.uploader div.uploaderPreview div.cropper div.cropper_main {
+	float: left;
+	width: 512px;
+	border: 1px solid #bbb;
+}
+div.uploader div.uploaderPreview div.cropper div.cropper_thumbs {
+	float: right;
+	width: 75px;
+}
+div.uploader div.uploaderPreview div.cropper div.cropper_thumbs div.cropper_thumb_75 {
+	width: 75px;
+	height: 75px;
+	border: 1px solid #bbb;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+div.uploader div.uploaderPreview div.cropper div.cropper_thumbs div.cropper_thumb_25 {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #bbb;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+div.uploader div.radiolist label {
+	display: block;
+}
+div.uploader div.uploaderDesc {
+	font-size: 11px;
+	margin: 0 0 5px;
+	font-weight: bold;
+}
+.personalJobInfo input{
+	width:263px;
+}
+
+div.uploader div.uploaderPreview div.loader {
+	border: 1px solid #bbb;
+	height: 200px;
+  	background: url(/resources/style/images/loadingAnimation.gif) center center no-repeat;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Facepond</title>
+</head>
+<body>
+		<script type="text/javascript">
+		
+		[6:19:13 PM] Mujeeb Mohmed: window.opener.gotoDashboard();     
+	     window.close();
+	     
+			//get the current URL
+			var url = (window.location.toString()).match(/\?([^#]+)(#.*)?$/)
+				//get the parameters
+				, params = RegExp.$1
+				// split up the query string and store in an
+				// associative array
+				, params = params.split("&")
+				, queryStringList = {}
+				, wo = window.opener
+				, msg
+			;
+			for(var i=0;i<params.length;i++) {
+				var tmp = params[i].split("=");
+				queryStringList[tmp[0]] = unescape(tmp[1]);
+			}
+						
+			if (queryStringList['status'] === 'success') {
+				if(queryStringList['userState'] === "new"){
+					wo.gotoPersonalInfoEdit();
+					window.close();
+				} else {
+					wo.gotoDashboard();					
+					window.close();
+				}
+			} else {
+        		// msg = (queryStringList['msg']).replace('+','-');
+				msg = queryStringList['msg'];
+				alert(decodeURIComponent((msg+'').replace(/\+/g, '%20')));
+				window.close();
+			}
+		</script>
+</body>
+</html>

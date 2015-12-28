@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+<script type="text/javascript">                                         
+
+$(document).ready(function() {
+	/*
+		$.get('http://api.groupon.com/v2/deals.json',
+	            {
+	              division_id:'boston',
+	              client_id:'8d8b68eb8a477bcbf4c5c64d264547b9164834dc',
+	            },
+	   			function(deals){
+					$('#response').html(deals.soldQuantity);
+	   			}, 'json');
+		*/
+		
+		/*
+	$("button").click(function(){
+		  $.get("http://api.groupon.com/v2/deals.json?division_id=boston&client_id=8d8b68eb8a477bcbf4c5c64d264547b9164834dc",
+		      function(result){
+		    $("#response").html(result);
+		    alert(result);
+		  }, "json");
+		}); 
+		*/
+
+	$.ajax({
+	    type: "POST",
+	    url: "http://api.groupon.com/v2/deals.json",
+	    data: {division_id:'boston',client_id: '8d8b68eb8a477bcbf4c5c64d264547b9164834dc'},
+	    success: function(response)
+	    {
+		    $("#response").html(response);
+		    alert(response);
+	    }
+	});
+
+});
+
+
+
+
+</script>  
+
+</head>
+
+<body>
+
+hello
+
+<button>Change Content</button>
+
+<div id="response"></div>
+
+</body>
+</html>
